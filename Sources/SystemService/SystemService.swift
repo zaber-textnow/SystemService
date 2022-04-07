@@ -6,15 +6,10 @@
 
 import UIKit
 
-class SystemService: NSObject {
+public struct SystemService {
 
     static let shared = SystemService()
 
-
-    private override init() { super.init() }
-    
-
-    
     func systemUptime()->String {
         return SSHardwareInfo.systemUptime()
     }
