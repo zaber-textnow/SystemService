@@ -6,9 +6,9 @@
 
 import UIKit
 
-public struct SystemService {
+public class SystemServices {
 
-    static let shared = SystemService()
+    static let shared = SystemServices()
 
     func systemUptime()->String {
         return SSHardwareInfo.systemUptime()
